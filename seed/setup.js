@@ -67,11 +67,11 @@ inquirer
           development: {
             host: 'preview.contentful.com',
             spaceId,
-            accessToken: previewToken,
+            accessToken: previewToken
           },
           production: {
             spaceId,
-            accessToken,
+            accessToken
           },
         },
         null,
