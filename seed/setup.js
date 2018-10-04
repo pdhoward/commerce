@@ -59,7 +59,7 @@ inquirer
   .prompt(questions)
   .then(({ spaceId, accessToken, previewToken, managementToken }) => {
     console.log('Writing config file...')
-    const configFilePath = path.resolve(__dirname, '..', '.contentful.json')
+    const configFilePath = path.resolve(__dirname, '..', '.variables.env')
     writeFileSync(
       configFilePath,
       JSON.stringify(

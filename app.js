@@ -8,7 +8,8 @@ const querystring = require('querystring')
 const helmet = require('helmet')
 
 // Load environment variables using dotenv
-require('dotenv').config({ path: 'variables.env' })
+// Require('dotenv').config({ path: 'variables.env' })
+require('dotenv').config()
 
 const helpers = require('./helpers')
 const { translate, initializeTranslations, setFallbackLocale } = require('./i18n/i18n')
