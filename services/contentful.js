@@ -15,7 +15,7 @@ let previewClient = null
 module.exports.initClients = (options) => {
   // Getting the app version
   const { version } = require('../package.json')
-  const applicationName = `the-example-app.nodejs/${version}`
+  const applicationName = `commerce/${version}`
 
   const config = options || {
     spaceId: process.env.CONTENTFUL_SPACE_ID,
