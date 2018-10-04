@@ -64,15 +64,10 @@ inquirer
       configFilePath,
       JSON.stringify(
         {
-          development: {
-            host: 'preview.contentful.com',
-            spaceId,
-            accessToken: previewToken
-          },
-          production: {
-            spaceId,
-            accessToken
-          },
+          CONTENTFUL_SPACE_ID: spaceId,
+          CONTENTFUL_PREVIEW_API_HOST: 'preview.contentful.com',
+          CONTENTFUL_DELIVERY_TOKEN: accessToken,
+          CONTENTFUL_PREVIEW_TOKEN: previewToken
         },
         null,
         2
@@ -88,7 +83,7 @@ inquirer
   .then((_, error) => {
     console.log(
       `All set! You can now run ${chalk.yellow(
-        'gatsby develop'
+        'commerce web app'
       )} to see it in action.`
     )
   })
