@@ -1,6 +1,6 @@
 // Setup modified from https://github.com/contentful-userland/gatsby-contentful-starter
 
-// also see prompt as an alternative to inquirer 
+// See prompt as an alternative to inquirer
 
 const spaceImport = require('contentful-import')
 const exportFile = require('../contentful/export.json')
@@ -39,20 +39,20 @@ const questions = [
     message: 'Your Space ID',
     validate: input =>
       /^[a-z0-9]{12}$/.test(input) ||
-      'Space ID must be 12 lowercase characters',
+      'Space ID must be 12 lowercase characters'
   },
   {
     name: 'accessToken',
-    message: 'Your Content Delivery API access token',
+    message: 'Your Content Delivery API access token'
   },
   {
     name: 'previewToken',
-    message: 'Your Content Preview API access token',
+    message: 'Your Content Preview API access token'
   },
   {
     name: 'managementToken',
-    message: 'Your Content Management API access token',
-  },
+    message: 'Your Content Management API access token'
+  }
 ]
 
 inquirer
