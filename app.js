@@ -1,5 +1,8 @@
-const path = require('path')
 
+// Demo app using nodejs cms and pug to render a site
+// Note there is a seed function that gets executed to set up cms
+
+const path = require('path')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const express = require('express')
